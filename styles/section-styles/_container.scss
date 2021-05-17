@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .product-image {
+    text-align: center;
+  }
+
+  .product-image img {
+    width: 30vh;
+  }
+
+  h2 {
+    font-family: 'Amiri', sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    color: rgb(102, 100, 114);
+    text-align: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
+  h5 {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(155, 156, 160);
+    margin-bottom: 2em;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  li {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2em;
+    margin-top: 1em;
+    text-transform: uppercase;
+    align-items: center;
+  }
+
+  .icon {
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    border: 1px solid rgb(170, 169, 169);
+    box-sizing: border-box;
+  }
+
+  .icon img {
+    width: 1.7em;
+    height: 1.7em;
+    padding: 0.5em;
+  }
+
+  li p {
+    font-size: 1em;
+    padding-left: 1em;
+    color: grey;
+  }
+
+  li p span {
+    font-weight: bold;
+  }
+
+  .included-attribute {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .included-attribute a {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    padding-left: 1.2em;
+  }
+
+
+  button {
+    text-transform: uppercase;
+    width: 90%;
+    margin-top: 3em;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: none;
+    background: rgb(1, 31, 58);
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+      background: grey
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+  .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 3em;
+
+    .product-image {
+      text-align: center;
+    }
+
+    .product-image img {
+      width: 40vh;
+    }
+
+    h2 {
+      text-align: left;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    h5 {
+      text-align: left;
+    }
+
+    li {
+      margin-left: 0;
+    }
+
+    button {
+      margin-top: 2em;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+}

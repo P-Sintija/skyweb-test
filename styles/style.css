@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Lato:wght@300;700&display=swap");
+
+.top-navbar {
+    background: black;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.top-navbar a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.top-navbar div {
+    margin: 0.3em;
+}
+
+.top-navbar span {
+    color: white;
+}
+
+.top-navbar .covid-info {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    margin-left: 1em;
+}
+
+.top-navbar .user-info {
+    -webkit-box-flex: initial;
+    -ms-flex: initial;
+    flex: initial;
+    margin-right: 1.4em;
+    text-decoration: none;
+}
+
+.top-navbar .user-link {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+    .top-navbar {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+        text-align: right;
+    }
+}
+
+.navbar {
+    background: white;
+    height: 4.2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navbar .navbar-links {
+    display: none;
+}
+
+.navbar .toggle-button {
+    margin: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 1.5em;
+}
+
+.navbar .toggle-button .line {
+    height: 2px;
+    width: 1.5em;
+    background: black;
+}
+
+.navbar .logo {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 3em;
+}
+
+.navbar .navbar-cart {
+    margin-right: 1.4em;
+}
+
+@media screen and (min-width: 900px) {
+    .navbar {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 15% 75% 10%;
+        grid-template-columns: 15% 75% 10%;
+    }
+
+    .navbar .toggle-button {
+        display: none;
+    }
+
+    .navbar .logo {
+        margin-left: 2em;
+    }
+
+    .navbar .logo img {
+        width: auto;
+    }
+
+    .navbar .navbar-links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .navbar .navbar-links ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .navbar .navbar-links li {
+        list-style: none;
+    }
+
+    .navbar .navbar-links li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1em;
+        color: grey;
+    }
+
+    .navbar .navbar-links li a:hover {
+        background: #f1f1f1;
+    }
+
+    .navbar .navbar-cart {
+        text-align: right;
+    }
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.container .product-image {
+    text-align: center;
+}
+
+.container .product-image img {
+    width: 30vh;
+}
+
+.container h2 {
+    font-family: 'Amiri', sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    color: #666472;
+    text-align: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.container h5 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #9b9ca0;
+    margin-bottom: 2em;
+}
+
+.container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left;
+}
+
+.container li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: 2em;
+    margin-top: 1em;
+    text-transform: uppercase;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.container .icon {
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    border: 1px solid #aaa9a9;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container .icon img {
+    width: 1.7em;
+    height: 1.7em;
+    padding: 0.5em;
+}
+
+.container li p {
+    font-size: 1em;
+    padding-left: 1em;
+    color: grey;
+}
+
+.container li p span {
+    font-weight: bold;
+}
+
+.container .included-attribute {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.container .included-attribute a {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    padding-left: 1.2em;
+}
+
+.container button {
+    text-transform: uppercase;
+    width: 90%;
+    margin-top: 3em;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: none;
+    background: #011f3a;
+    color: white;
+    font-weight: bold;
+}
+
+.container button:hover {
+    background: grey;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+        margin: 3em;
+    }
+
+    .container .product-image {
+        text-align: center;
+    }
+
+    .container .product-image img {
+        width: 40vh;
+    }
+
+    .container h2 {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container h5 {
+        text-align: left;
+    }
+
+    .container li {
+        margin-left: 0;
+    }
+
+    .container button {
+        margin-top: 2em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+}
+
+.line {
+    background: darkgrey;
+    height: 1px;
+    width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
